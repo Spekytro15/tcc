@@ -1,0 +1,249 @@
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    body {
+        -webkit-touch-callout: none;
+        -webkit-text-size-adjust: none;
+        background-color: #ffffff;
+        background-image: linear-gradient(to bottom, #ffffff 0%, #fffdfd 51%);
+        font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+        font-size: 12px;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+        text-transform: uppercase;
+        width: 100%;
+    }
+    
+    @font-face {
+        font-family: logo-letra;
+        src: url(fontes/Ranchers-Regular.ttf);
+    }
+    /* tela cadastro cantina */
+    
+    .div-cadastro {
+        position: absolute;
+        width: 90%;
+        margin: 5%;
+        background-color: white;
+        z-index: 2;
+        position: fixed;
+        border-radius: 10px;
+        padding: 6px;
+    }
+    
+    .div-text {
+        font-family: logo-letra;
+        font-size: 25pt;
+        margin: 1%;
+    }
+    
+    .txt-inf {
+        position: absolute;
+        z-index: 6;
+        color: teal;
+        font-family: logo-letra;
+        font-size: 19pt;
+        margin: 5%;
+        overflow: hidden;
+    }
+    /*---- img divs------*/
+    
+    .color-div {
+        background-image: url(../img/cadastrar.svg);
+        background-size: 74%;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: 35vh;
+        overflow: hidden;
+    }
+    /**/
+    
+    .cad-cantina {
+        background-color: white;
+        width: 88%;
+        margin: 2%;
+        top: 2%;
+        border-radius: 15px;
+    }
+    
+    h4 {
+        font-family: logo-letra;
+        color: #00BFA6;
+        text-shadow: 5px 5px 15px rgb(182, 180, 180);
+    }
+    /* TELA INICIAL */
+    
+    #inicio-div {
+        padding: 6px;
+        position: absolute;
+        top: 15vh;
+        width: 90%;
+        margin: 6%;
+    }
+    
+    .btns-div button {
+        border-radius: 15px;
+        margin: 6%;
+    }
+    
+    .img-inicio {
+        background-image: url(../img/tela-ini.svg);
+        background-size: 98%;
+        background-repeat: no-repeat;
+        width: 95%;
+        height: 36vh;
+        overflow: hidden;
+    }
+    /* btns */
+    
+    .btn-voltar-cad {
+        position: absolute;
+        color: #00BFA6;
+        margin: 6%;
+    }
+    /* div resposta*/
+    
+    #sucess {
+        position: absolute;
+        color: rgb(138, 228, 142);
+        width: 88%;
+        text-shadow: 5px 5px 5px black;
+    }
+    
+    #error {
+        position: absolute;
+        color: rgb(209, 121, 121);
+        width: 88%;
+        text-shadow: 5px 5px 5px black;
+    }
+    /* tela 4 */
+    
+    .sidenav-trigger {
+        color: #00BFA6;
+        margin: 5%;
+    }
+    
+    .tela-cantina-log {
+        width: 100%;
+        height: 88vh;
+    }
+    
+    .img-fundo-tela-logada {
+        position: absolute;
+        margin-top: 50vh;
+        background-image: url(../img/tela-logada.svg);
+        width: 100%;
+        height: 50vh;
+        background-size: 800%;
+        background-repeat: no-repeat;
+    }
+    
+    .center-div-tela-logada {
+        margin-top: 18vh;
+        position: absolute;
+        z-index: 3;
+        background-color: #75727263;
+        border-radius: 10px;
+        width: 95%;
+        height: 97vh;
+        margin: 2%;
+        overflow: scroll;
+    }
+    
+    #resposta {
+        margin-top: 6vh;
+    }
+    /*  tela lançar creditos */
+    
+    .img-tamanho-lancar-creditos {
+        width: 20vh;
+    }
+    
+    #btn-adicionar-creditos-tela-6-add {
+        position: absolute;
+        background-color: white;
+        color: teal;
+        padding: 15px;
+        margin: 4%;
+        border-radius: 10px;
+        margin-top: 25vh;
+    }
+    
+    .color-span-toats {
+        color: rgb(75, 204, 24);
+    }
+    
+    #pre-loader {
+        position: absolute;
+        z-index: 9999;
+    }
+    /* toats */
+    
+    .toats_css {
+        width: 75%;
+        background-color: white;
+        color: teal;
+        padding: 3px;
+        border-radius: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    /* margin inputs */
+    
+    .margin_inpus {
+        margin-top: 4vh;
+    }
+    /* tela de pedidos*/
+    
+    .creditos-get {
+        background-color: #00BFA6;
+        width: 89%;
+        border-radius: 15px;
+        height: 15vh;
+        color: #ffffff;
+        margin-top: 10vh;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .title-card-cred {
+        font-size: 25pt;
+        color: turquoise;
+    }
+    
+    .capo-txt {
+        border-radius: 12px;
+        background-color: white;
+    }
+    
+    .enbacar {
+        text-shadow: 5px 1px 15px #00BFA6;
+        -webkit-filter: blur(15px);
+        -moz-filter: blur(15px);
+        -o-filter: blur(15px);
+        -ms-filter: blur(15px);
+        filter: blur(15px);
+    }
+    
+    .pedidos_feitos {
+        background-color: #00BFA6;
+        width: 89%;
+        border-radius: 15px;
+        height: 56vh;
+        color: #ffffff;
+        margin-top: 3vh;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .pedidos_feitos_int {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 15px;
+        height: 54vh;
+        color: #ffffff;
+        text-align: center;
+        padding: 5px;
+    }

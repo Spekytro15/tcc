@@ -1,0 +1,4 @@
+
+--------- acesso livre api
+cordova plugin add cordova-plugin-enable-cleartext-traffic
+ cordova prepare

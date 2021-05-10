@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <script src="js/jquery.js "></script>
+    <title>cadastro</title>
+</head>
+
+<body>
+    <div id="tela-1" style="display: none;">
+        <center>
+            <h4>Catina do aluno</h4>
+            <div id="inicio-div">
+
+                <div class="img-inicio">
+
+                </div>
+                <div class="text-div">
+                    <p>Nossa Cantina é um aplicativo que foi desenvolvido com o intuito de auxiliar na aplicação dos serviços oferecidos pela sua cantina de maneira prática, flexível e eficiente.
+                    </p>
+                </div>
+                <div class="btns-div">
+                    <button id="btn-entrar-tela-1" class="btn ">Entrar</button>
+
+                </div>
+        </center>
+        </div>
+
+
+        <div id="tela-3" style="display: none;">
+            <div id="login-cantina">
+                <a class="btn-voltar-cad" href="#!"><i class="material-icons">arrow_back</i></a>
+                <center>
+                    <h4>Entrar</h4>
+                    <div class="color-div">
+                    </div>
+                    <div class="cad-cantina ">
+                        <div class="row ">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="CPF_aluno" type="email" required class="validate">
+                                    <label style="text-align: center;" for="email">CPF</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="senha_aluno" type="password" required class="validate">
+                                    <label style="text-align: center;" for="senha_aluno">Senha</label>
+                                </div>
+                                <a href="#">esqueceu sua senha ?</a>
+                            </div>
+                            <button id="btn-entrar-login" class="btn ">Entrar</button>
+
+                        </div>
+
+                </center>
+                </div>
+            </div>
+            <div style="display: block;" id="tela-4">
+                <div class="tela-cantina-log">
+                    <ul id="slide-out" class="sidenav">
+                        <li>
+                            <div class="user-view">
+                                <div class="background">
+                                    <img src="https://scontent.frao2-1.fna.fbcdn.net/v/t1.6435-9/159136274_2812545192406899_2375625601874213187_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Kb9milZR110AX9682hc&_nc_ht=scontent.frao2-1.fna&oh=7a3ba6967e474b8e2c28a2db5bde8a5d&oe=60B46A97">
+                                </div>
+                                <a href="#user"><img class="circle" src="https://scontent.frao2-1.fna.fbcdn.net/v/t1.6435-9/159136274_2812545192406899_2375625601874213187_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Kb9milZR110AX9682hc&_nc_ht=scontent.frao2-1.fna&oh=7a3ba6967e474b8e2c28a2db5bde8a5d&oe=60B46A97"></a>
+                                <a href="#name"><span class="white-text name">Mateus</span></a>
+                                <a href="#email"><span class="white-text email">CPF: 151.546.546-07</span></a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a style="color: #00BFA6;" class="subheader">Conta</a></li>
+                        <li><a class="waves-effect " href="#!">mudar senha</a></li>
+                        <li><a class="waves-effect " href="#!">mudar Foto</a></li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a style="color: #00BFA6;" class="subheader">cantina</a></li>
+                        <li><a class="waves-effect " href="#!">Produtos</a></li>
+                        <li><a class="waves-effect " href="#!">Produtos em espera </a></li>
+
+
+
+                        <li><a class="waves-effect btn" href="#!">sair</a></li>
+                    </ul>
+
+                    <center>
+                        <div class="center-div-tela-logada">
+                            <nav style="position: fixed; z-index: 5; box-shadow: none;" class="transparent">
+                                <ul style="display: none; background-color: #00bfa6a9;" id="input-buscar-add-creditos">
+                                </ul>
+                                <ul id="menu_tela_global">
+                                    <li class="right">
+                                        <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+                            <div id="tela-5">
+                                <div class="creditos-get">
+                                    <span>Saldo atual</span>
+                                    <a href="#" id="close_visibili_creditos" class="right"><i style="color: white;" class="material-icons">visibility</i></a>
+                                    <a href="#" style="display: none;" id="open_visibili_creditos" class="right"><i style="color: white;" class="material-icons">visibility_off</i></a>
+                                    <a href="#" class="left tooltipped" data-position="bottom" data-tooltip="Atualizar"><i style="color: white;" class="material-icons">sync</i></a>
+                                    <div class="capo-txt">
+                                        <h3 id="creditos_atual" value="oi" class="title-card-cred"><span id="valor-credido"></span>R$</h3>
+                                    </div>
+                                </div>
+                                <div class="pedidos_feitos">
+                                    <div class="pedidos_feitos_int">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div style="display:none" id="tela-7">
+
+                                <ul id="resposta"></ul>
+                            </div>
+
+
+
+                    </center>
+                    <div class="img-fundo-tela-logada">
+
+                    </div>
+
+                    <a id="btn-voltar-central" style="display: none;position: absolute; z-index: 12; margin: 7%; color: #fafafa;" class=""><i class="material-icons">arrow_back</i></a>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <script src="cordova.js "></script>
+            <script src="./js/dblocal.js"></script>
+            <script src="js/materialize.min.js "></script>
+            <script src="js/index.js "></script>
+            <script src="js/controllers.js"></script>
+            <script src="js/login.js"></script>
+            <script src="./js/usuario_inf.js"></script>
+            <script src="js/pedidos.js"></script>
+
+
+
+</body>
+
+</html>
