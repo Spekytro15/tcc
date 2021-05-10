@@ -12,7 +12,7 @@ document.addEventListener('deviceready', function() {
 
 
     db.transaction(function(tx) {
-        tx.executeSql("create table if not exists usuario_aluno(_id integer primary key,  CPF text,token text, senha text)", [], onSuccess, onError);
+        tx.executeSql("create table if not exists usuario(_id integer primary key, name text, email text,token text, senha text)", [], onSuccess, onError);
 
     });
 
@@ -26,14 +26,15 @@ document.addEventListener('deviceready', function() {
     }
 
     db.transaction(function(tx) {
-        var sql = 'select * from usuario_aluno  ';
+        var sql = 'select * from usuario  ';
         tx.executeSql(sql, [], function(_, result) {
 
             db.transaction(function(tx) {
-                    tx.executeSql('select count(*) AS mycount from usuario_aluno ', [], function(tx, rs) {
+                    tx.executeSql('select count(*) AS mycount from usuario ', [], function(tx, rs) {
                             console.log(rs.rows.item(0).mycount);
                             if (rs.rows.length == 1) {
                                 $('#tela-1').hide();
+                                $('#tela-2').hide();
                                 $('#tela-3').hide();
                                 $('#tela-4').show();
                             } else {

@@ -145,7 +145,7 @@
         margin-top: 18vh;
         position: absolute;
         z-index: 3;
-        background-color: #75727263;
+        background-color: rgba(238, 228, 228, 0.418);
         border-radius: 10px;
         width: 95%;
         height: 97vh;
@@ -155,6 +155,15 @@
     
     #resposta {
         margin-top: 6vh;
+    }
+    /*cadastro produto */
+    
+    .div-cadastrar-produto {
+        width: 93%;
+        padding: 5px;
+        margin-top: 2vh;
+        height: 94vh;
+        border-radius: 2px;
     }
     /*  tela lançar creditos */
     
@@ -180,6 +189,15 @@
         position: absolute;
         z-index: 9999;
     }
+    /* ela produtos */
+    
+    .div-cadastrar-aluno {
+        width: 90%;
+        padding: 5px;
+        margin-top: 2vh;
+        height: 40vh;
+        border-radius: 10px;
+    }
     /* toats */
     
     .toats_css {
@@ -196,54 +214,3 @@
         margin-top: 4vh;
     }
     /* tela de pedidos*/
-    
-    .creditos-get {
-        background-color: #00BFA6;
-        width: 89%;
-        border-radius: 15px;
-        height: 15vh;
-        color: #ffffff;
-        margin-top: 10vh;
-        text-align: center;
-        padding: 5px;
-    }
-    
-    .title-card-cred {
-        font-size: 25pt;
-        color: turquoise;
-    }
-    
-    .capo-txt {
-        border-radius: 12px;
-        background-color: white;
-    }
-    
-    .enbacar {
-        text-shadow: 5px 1px 15px #00BFA6;
-        -webkit-filter: blur(15px);
-        -moz-filter: blur(15px);
-        -o-filter: blur(15px);
-        -ms-filter: blur(15px);
-        filter: blur(15px);
-    }
-    
-    .pedidos_feitos {
-        background-color: #00BFA6;
-        width: 89%;
-        border-radius: 15px;
-        height: 56vh;
-        color: #ffffff;
-        margin-top: 3vh;
-        text-align: center;
-        padding: 5px;
-    }
-    
-    .pedidos_feitos_int {
-        background-color: #ffffff;
-        width: 100%;
-        border-radius: 15px;
-        height: 54vh;
-        color: #ffffff;
-        text-align: center;
-        padding: 5px;
-    }

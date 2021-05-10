@@ -17,7 +17,7 @@
 <body>
     <div id="tela-1" style="display: none;">
         <center>
-            <h4>Catina do aluno</h4>
+            <h4>Nossa Cantina</h4>
             <div id="inicio-div">
 
                 <div class="img-inicio">
@@ -29,137 +29,251 @@
                 </div>
                 <div class="btns-div">
                     <button id="btn-entrar-tela-1" class="btn ">Entrar</button>
-
+                    <button id="btn-cadastro-tela-1" class="btn">Criar conta</button>
                 </div>
         </center>
         </div>
-
-
-        <div id="tela-3" style="display: none;">
-            <div id="login-cantina">
-                <a class="btn-voltar-cad" href="#!"><i class="material-icons">arrow_back</i></a>
-                <center>
-                    <h4>Entrar</h4>
+    </div>
+    <div id="tela-2" style="display: none;">
+        <div id="cadastro-cantina">
+            <a class="btn-voltar-cad" href="#!"><i class="material-icons">arrow_back</i></a>
+            <center>
+                <div class="cad-cantina ">
+                    <h4>Criar conta</h4>
                     <div class="color-div">
                     </div>
-                    <div class="cad-cantina ">
-                        <div class="row ">
+
+                    <div class="row ">
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nome" type="text" class="validate">
+                                <label for="email">Nome</label>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="senha" type="password" class="validate">
+                                <label for="senha">Senha</label>
+
+                            </div>
+                        </div>
+
+                        <button id="btn-cadastro-cantina" class="btn ">Cadastrar</button>
+                        <div id="sucess"></div>
+                        <div id="error"></div>
+                    </div>
+
+                </div>
+            </center>
+
+        </div>
+    </div>
+    <div id="tela-3" style="display: none;">
+        <div id="login-cantina">
+            <a class="btn-voltar-cad" href="#!"><i class="material-icons">arrow_back</i></a>
+            <center>
+                <h4>Entrar</h4>
+                <div class="color-div">
+                </div>
+                <div class="cad-cantina ">
+                    <div class="row ">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email_cantina" type="email" required class="validate">
+                                <label for="email">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="senha_cantina" type="password" required class="validate">
+                                <label for="senha">Senha</label>
+                            </div>
+                        </div>
+                        <button id="btn-entrar-login" class="btn ">Entrar</button>
+
+                    </div>
+
+            </center>
+            </div>
+        </div>
+        <div style="display: block;" id="tela-4">
+            <div class="tela-cantina-log">
+
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">account_box</i>Aluno
+                                </div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <button id="cadastrar-aluno-btn-tela-5" class="btn col s12">cadastrar aluno</button>
+                                        <button style="margin-top: 1vh;" id="btn-cadastrar-creditos" class="btn col s12">Lançar Creditos</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">add_shopping_cart</i>Produtos
+                                </div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <button id="btn-cadastrar-produto" class="btn col s12">adicionar</button>
+                                        <button style="margin-top:1vh;" id="btn-mostrar-produto" class="btn col s12">Ver produtos</button>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">notifications_active</i>Pedidos de compras <span class="new badge">1</span>
+                                </div>
+
+                            </li>
+
+                    </li>
+                    </ul>
+                    </li>
+                </ul>
+                <center>
+                    <div class="center-div-tela-logada">
+                        <nav style="position: fixed; z-index: 5; box-shadow: none;" class="transparent">
+                            <ul style="display: none; background-color: #00bfa6a9;" id="input-buscar-add-creditos">
+                            </ul>
+                            <ul id="menu_tela_global">
+                                <li class="right">
+                                    <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                        <div style="margin-top: 7vh;display: none;" id="tela-9" class="">
                             <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="CPF_aluno" type="email" required class="validate">
-                                    <label style="text-align: center;" for="email">CPF</label>
+                                <div class="nav-wrapper col s10">
+                                    <input id="search-creditos-get-aluno" type="search" placeholder="Digite CPF do aluno">
+                                </div>
+                                <div>
+                                    <a class="btn rigth" href="#" id="btn-lancar-creditos"><i class="material-icons">search</i></a>
+                                    <a style="display: none;" class="btn rigth" href="#" id="close-btn-lancar-creditos"><i class="material-icons">close</i></a>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="senha_aluno" type="password" required class="validate">
-                                    <label style="text-align: center;" for="senha_aluno">Senha</label>
-                                </div>
-                                <a href="#">esqueceu sua senha ?</a>
-                            </div>
-                            <button id="btn-entrar-login" class="btn ">Entrar</button>
+                            <ul style="margin-top: vh;" id="tela-5">
+                            </ul>
+                            <a id="btn-insert-btn-tela-6" style="display: none;position: fixed; z-index: 4; top: 87vh;right: 2vh; " class="btn-floating btn-large waves-effect waves-light right"><i class="material-icons">add</i></a>
 
                         </div>
 
+                        <div id="tela-6" style="display: none;" class="div-cadastrar-aluno">
+                            <div class="row">
+
+                                <h4 style="font-size: 16pt;">Cadastrar aluno</h4>
+                                <div class="input-field col s12">
+                                    <input id="nome-aluno" type="text" class="validate">
+                                    <label for="nome">Nome aluno</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input id="cpf-aluno" type="text" class="validate">
+                                    <label for="cpf">CPF</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="senha-aluno" type="text" class="validate">
+                                    <label for="preco">senha</label>
+                                </div>
+
+                            </div>
+
+                            <button style="margin:5%" id="btn-cadastro-aluno" class="btn right">Cadastrar</button>
+
+                        </div>
+                        <div id="modal_creditos" class="modal">
+                            <div class="modal-content">
+                                <a class="modal-close right " style="color: #00BFA6;"><i class="material-icons">close</i></a>
+                                <p>Adicionar creditos</p>
+                                <p><input id="input-insert-creditos" style="margin-left: 1vh;" class="col s5" type="number" placeholder="R$">Valor</p>
+                            </div>
+                            <div class="modal-footer">
+
+                                <a href="#!" id="btn-inset-creditos" class="modal-close waves-effect waves-green  btn"><i class="material-icons">check</i></a>
+                            </div>
+                        </div>
+                        <div id="modal_editar" class="modal">
+
+                        </div>
+                        <div id="modal_deletar" class="modal">
+                            <div class="modal-content">
+                                <p>Excluido produto com sucesso </p>
+
+                            </div>
+                        </div>
+                        <div id="tela-8" style="display: none" class="div-cadastrar-produto">
+                            <div class="row">
+                                <h4 style="font-size: 16pt;">Cadastrar produto</h4>
+                                <div class="input-field col s12">
+                                    <input id="nome_produto" type="text" class="validate margin_inpus">
+                                    <label for="nome">Nome Produto</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input id="descricao_produto" type="text" class="validate margin_inpus">
+                                    <label for="descricao_produto">descrição</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="preco_produto" type="text" class="validate margin_inpus">
+                                    <label for="preco">Preço</label>
+                                </div>
+
+                                <button style="margin:5%" id="btn-cadastro-produto" class="btn right">Cadastrar</button>
+
+                            </div>
+
+
+                        </div>
+                        <div style="display:none" id="tela-7">
+
+                            <ul id="resposta"></ul>
+                        </div>
+
+
+
                 </center>
-                </div>
-            </div>
-            <div style="display: block;" id="tela-4">
-                <div class="tela-cantina-log">
-                    <ul id="slide-out" class="sidenav">
-                        <li>
-                            <div class="user-view">
-                                <div class="background">
-                                    <img src="https://scontent.frao2-1.fna.fbcdn.net/v/t1.6435-9/159136274_2812545192406899_2375625601874213187_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Kb9milZR110AX9682hc&_nc_ht=scontent.frao2-1.fna&oh=7a3ba6967e474b8e2c28a2db5bde8a5d&oe=60B46A97">
-                                </div>
-                                <a href="#user"><img class="circle" src="https://scontent.frao2-1.fna.fbcdn.net/v/t1.6435-9/159136274_2812545192406899_2375625601874213187_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Kb9milZR110AX9682hc&_nc_ht=scontent.frao2-1.fna&oh=7a3ba6967e474b8e2c28a2db5bde8a5d&oe=60B46A97"></a>
-                                <a href="#name"><span class="white-text name">Mateus</span></a>
-                                <a href="#email"><span class="white-text email">CPF: 151.546.546-07</span></a>
+                <div class="img-fundo-tela-logada">
 
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="divider"></div>
-                        </li>
-                        <li><a style="color: #00BFA6;" class="subheader">Conta</a></li>
-                        <li><a class="waves-effect " href="#!">mudar senha</a></li>
-                        <li><a class="waves-effect " href="#!">mudar Foto</a></li>
-                        <li>
-                            <div class="divider"></div>
-                        </li>
-                        <li><a style="color: #00BFA6;" class="subheader">cantina</a></li>
-                        <li><a class="waves-effect " href="#!">Produtos</a></li>
-                        <li><a class="waves-effect " href="#!">Produtos em espera </a></li>
-
-
-
-                        <li><a class="waves-effect btn" href="#!">sair</a></li>
-                    </ul>
-
-                    <center>
-                        <div class="center-div-tela-logada">
-                            <nav style="position: fixed; z-index: 5; box-shadow: none;" class="transparent">
-                                <ul style="display: none; background-color: #00bfa6a9;" id="input-buscar-add-creditos">
-                                </ul>
-                                <ul id="menu_tela_global">
-                                    <li class="right">
-                                        <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                                    </li>
-
-                                </ul>
-                            </nav>
-
-                            <div id="tela-5">
-                                <div class="creditos-get">
-                                    <span>Saldo atual</span>
-                                    <a href="#" id="close_visibili_creditos" class="right"><i style="color: white;" class="material-icons">visibility</i></a>
-                                    <a href="#" style="display: none;" id="open_visibili_creditos" class="right"><i style="color: white;" class="material-icons">visibility_off</i></a>
-                                    <a href="#" class="left tooltipped" data-position="bottom" data-tooltip="Atualizar"><i style="color: white;" class="material-icons">sync</i></a>
-                                    <div class="capo-txt">
-                                        <h3 id="creditos_atual" value="oi" class="title-card-cred"><span id="valor-credido"></span>R$</h3>
-                                    </div>
-                                </div>
-                                <div class="pedidos_feitos">
-                                    <div class="pedidos_feitos_int">
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div style="display:none" id="tela-7">
-
-                                <ul id="resposta"></ul>
-                            </div>
-
-
-
-                    </center>
-                    <div class="img-fundo-tela-logada">
-
-                    </div>
-
-                    <a id="btn-voltar-central" style="display: none;position: absolute; z-index: 12; margin: 7%; color: #fafafa;" class=""><i class="material-icons">arrow_back</i></a>
-
-
-
-                    </div>
                 </div>
 
+                <a id="btn-voltar-central" style="display: none;position: absolute; z-index: 12; margin: 7%; color: #00BFA6;" class=""><i class="material-icons">arrow_back</i></a>
+
+
+
+                </div>
             </div>
 
+        </div>
 
 
 
-            <script src="cordova.js "></script>
-            <script src="./js/dblocal.js"></script>
-            <script src="js/materialize.min.js "></script>
-            <script src="js/index.js "></script>
-            <script src="js/controllers.js"></script>
-            <script src="js/login.js"></script>
-            <script src="./js/usuario_inf.js"></script>
-            <script src="js/pedidos.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="cordova.js "></script>
+        <script src="./js/dblocal.js"></script>
+        <script src="js/materialize.min.js "></script>
+        <script src="js/index.js "></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/cantina.js"></script>
+        <script src="js/alunos.js"></script>
+        <script src="js/produtos.js"></script>
+        <script src="js/pedidos.js"></script>
 
 
 
